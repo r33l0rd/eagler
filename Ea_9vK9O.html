@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>eaglercraft</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. You can join real Minecraft 1.5.2 servers with it through a custom proxy based on Bungeecord."/>
+<meta name="keywords" content="calder, young, lax1dude, games, eaglercraft, eagler, minecraft"/>
+<meta name="url" content="https://g.deev.is/eaglercraft/"/>
+<meta name="author" content="Calder Young"/>
+<meta property="og:title" content="Eaglercraft"/>
+<meta property="og:locale" content="en-US"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://uiseagler.glitch.me"/>
+<meta property="og:image" content="https://web.archive.org/web/20220130012831im_/https://media.discordapp.net/attachments/378764518081429506/932053915061587978/thumbnail2.png"/>
+<meta property="og:description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. You can join real Minecraft 1.5.2 servers with it through a custom proxy based on Bungeecord."/>
+<link type="image/x-icon" rel="shortcut icon" href="/web/20220130012831im_/https://g.eags.us/eaglercraft/favicon.ico"/>
+<script type="text/javascript" src="classes7.js"></script>
+<style type="text/css">
+a.nolink, a.nolink:link, a.nolink:hover, a.nolink:visited {
+	color: white;
+}
+a.nolink:active {
+	color: yellow;
+}
+#available {
+	position: fixed;
+	background-color: #333333;
+	top: 0px;
+	right: 0px;
+	padding: 10px 30px;
+	width:min(80vw,250px); 
+	color:white;
+}
+#available_hide {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	margin: 10px;
+	padding: 2px;
+	font-weight: bold;
+	border: 1px solid white;
+	font-size: 12px;
+	line-height: 12px;
+	cursor: pointer;
+	background-color: #333333;
+}
+</style>
+<script type="text/javascript">
+window.addEventListener("load", function(){
+	window.minecraftOpts = [
+		"game_frame","assets.epk",
+		"CgAACQAHc2VydmVycwoAAAACCAACaXAAJHdzczovL2cuZWFncy51cy9lYWdsZXJjcmFmdC9jcmVhdGl2ZQgABG5hbWUAFGVhZ2xlcmNyYWZ0IGNyZWF0aXZlAQALaGlkZUFkZHJlc3MACAAKZm9yY2VkTU9URAAhdGhpcyBpcyBtZWFudCB0byBiZSBhIGRlbW8gc2VydmVyAAgAAmlwACR3c3M6Ly9nLmVhZ3MudXMvZWFnbGVyY3JhZnQvc3Vydml2YWwIAARuYW1lABRlYWdsZXJjcmFmdCBzdXJ2aXZhbAEAC2hpZGVBZGRyZXNzAAgACmZvcmNlZE1PVEQAI3NlZSBnaXRodWIgZm9yIHByaXZhdGUgc2VydmVyIGd1aWRlAAA="
+	];
+	setTimeout(function() { document.getElementById("available").style.display = "block"; }, 5000 );
+	window.remAvailable = setTimeout(function() { document.getElementById("available").remove(); }, 18000 );
+	document.getElementById("available_hide").addEventListener("click", function() {
+		clearTimeout(window.remAvailable);
+		document.getElementById("available").remove();
+	});
+		if (browser.indexOf("mac") > -1) {
+		alert("Due to the lack of available debug tools, this game doesn't reliably work on macOS");
+	}
+	main();
+});
+</script>
+</head>
+<body style="margin:0px;width:100vw;height:100vh;" id="game_frame"> 
+<div id="available" style="display:none;">
+<p id="available_hide">&nbsp;X&nbsp;</p>
+<p style="margin:0px;">For people with restricted internet access, eaglercraft is available as a downloadable HTML file, <a class="nolink" href="https://web.archive.org/web/20220130012831/https://github.com/LAX1DUDE/eaglercraft/raw/main/stable-download/Offline_Download_Version.html">click here</a> to download the latest version</p>
+</div>
+</body>
+</html>
